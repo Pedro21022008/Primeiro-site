@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hub - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div id="pedro">
+           <h2>Pedro</h2>
+        </div>
+        <section class="links">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="projetos.html">Projetos</a> 
+                <a href="contato.html">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <div class="titulo-paginas">
+            <h1>Agora se Apresente para mim!</h1>
+            <hr class="linha-animada">
+        </div>
+
+        <div class="aviso-demonstrativo">
+            <p>🚀 <strong>Nota:</strong> Este formulário está ativo! Sinta-se à vontade para enviar uma mensagem real.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xdajenyl" method="POST" class="formulario-largo">
+            
+            <div class="campo">
+                <label>Nome:</label>
+                <input type="text" name="Nome" required>
+            </div>
+
+            <div class="linha-contato">
+                <div class="campo campo-ddd">
+                    <label>DDD:</label>
+                    <input type="text" name="DDD" maxlength="2" required>
+                </div>
+                <div class="campo campo-tel">
+                    <label>Telefone:</label>
+                    <input type="text" name="Telefone" maxlength="9" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Email:</label>
+                <input type="email" name="Email" required> 
+            </div>
+
+            <div class="campo">
+                <label>Recado:</label>
+                <textarea name="Mensagem" rows="5" required></textarea>
+            </div>
+
+            <div class="botoes-form">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button> 
+            </div>
+        </form>
+
+        <div class="info-contato-flutuante">
+            <h2>Área para contato</h2>
+            <p>(21) 21982307180</p>
+            <p>pedro21022008@gmail.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Pedro</p>
+    </footer>
+</body>
+</html>

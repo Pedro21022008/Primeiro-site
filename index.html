@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="pedro">
+           <h2>Pedro</h2> 
+        </div>
+        <section class="links">
+            <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="contato.html">Contato</a>
+            </nav>
+        </section>
+    </header>
+    <div class="home">
+        <main>
+           <section class="hero">
+                <h1 id="saudacao">Olá, <span id="roleta-texto">Bom dia</span>, visitante!</h1> 
+                <h2>Bem vindo ao meu site!</h2>
+                <p>Esse é o meu hub pessoal onde você pode conhecer sobre mim.</p>
+                <a class="botao" href="projetos.html">Meus Projetos</a>
+                </section>
+        </main>
+        </div>
+    <footer>
+        <p>© 2026 - Pedro</p>
+    </footer>
+    <script>
+        window.onload = function() {
+           
+            const textoVariante = document.getElementById("roleta-texto");
+            
+           
+            const horaAtual = new Date().getHours();
+            let saudacaoReal = "";
+
+            if (horaAtual >= 5 && horaAtual < 12) {
+                saudacaoReal = "Bom dia";
+            } else if (horaAtual >= 12 && horaAtual < 18) {
+                saudacaoReal = "Boa tarde";
+            } else {
+                saudacaoReal = "Boa noite";
+            }
+
+            
+            const opcoes = ["Boa tarde", "Boa noite", "Bom dia"];
+            let i = 0;
+            
+            
+            const tempoTotalAnimacao = 1300; 
+          
+            const velocidadeTroca = 140; 
+
+         
+            const intervalo = setInterval(function() {
+                textoVariante.textContent = opcoes[i];
+                i = (i + 1) % opcoes.length;
+            }, velocidadeTroca);
+
+        
+            setTimeout(function() {
+                clearInterval(intervalo); 
+                textoVariante.textContent = saudacaoReal;
+            }, tempoTotalAnimacao);
+        };
+    </script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
